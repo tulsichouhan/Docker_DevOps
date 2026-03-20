@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Book Appointment</h2>
+
+<form method="post">
+<input name="patient" placeholder="Patient Name">
+<input name="doctor" placeholder="Doctor Name">
+<input name="date" placeholder="Date">
+<button>Book</button>
+</form>
+
+<ul>
+{% for a in data %}
+<li>{{a.patient}} with {{a.doctor}} on {{a.date}}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
