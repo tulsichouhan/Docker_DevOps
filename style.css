@@ -1,0 +1,41 @@
+body{
+font-family:Arial;
+background:#f4f6f9;
+margin:0;
+}
+
+nav{
+background:#2b7cff;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+padding:20px;
+}
+
+input{
+padding:6px;
+margin:5px;
+}
+
+button{
+padding:6px 15px;
+background:#2b7cff;
+color:white;
+border:none;
+}
+
+.cards div{
+background:white;
+padding:15px;
+margin:10px;
+display:inline-block;
+box-shadow:0 0 5px #aaa;
+}
