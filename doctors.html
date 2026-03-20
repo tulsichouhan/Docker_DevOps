@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Add Doctor</h2>
+
+<form method="post">
+<input name="name" placeholder="Doctor Name">
+<input name="speciality" placeholder="Speciality">
+<button>Add</button>
+</form>
+
+<ul>
+{% for d in data %}
+<li>{{d.name}} - {{d.speciality}}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

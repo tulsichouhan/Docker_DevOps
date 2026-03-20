@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Add Patient</h2>
+
+<form method="post">
+<input name="name" placeholder="Name">
+<input name="age" placeholder="Age">
+<input name="disease" placeholder="Disease">
+<button>Add</button>
+</form>
+
+<ul>
+{% for p in data %}
+<li>{{p.name}} - {{p.age}} - {{p.disease}}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
